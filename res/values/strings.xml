@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StorySpot</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">Stories</string>
+    <string name="title_activity_create">New Story</string>
+    <string name="title_activity_tag">Add Location</string>
+    <string name="title_activity_story">Story</string>
+    <string name="main_create">Create</string>
+    <string name="create_tag">Add a location</string>
+    <string name="tag_name_hint">Name this spot</string>
+    <string name="tag_camera">Camera</string>
+    <string name="tag_next">Continue</string>
+    <string name="create_name_hint">Your storys title.</string>
+    <string name="create_desc_hint">A short description</string>
+    <string name="tag_desc">Description</string>
+    <string name="create_save">Save</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_activity_read">ReadActivity</string>
+
+</resources>

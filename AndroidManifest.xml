@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.its.spiders"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="com.its.spiders.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.its.spiders.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.its.spiders.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.its.spiders.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.its.spiders.CreateActivity"
+            android:label="@string/title_activity_create"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.its.spiders.TagActivity"
+            android:label="@string/title_activity_tag"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.its.spiders.StoryActivity"
+            android:label="@string/title_activity_story" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.its.spiders.FetchActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.its.spiders.MapViewActivity"
+            android:label="@string/title_activity_view"
+            android:screenOrientation="portrait">
+        </activity>
+
+       
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDhkS2NXxm3d1-uPZO0E8ifA7ilTPplo8k" />
+
+        <activity
+            android:name="com.its.spiders.ReadActivity"
+            android:label="@string/title_activity_read" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+    <permission
+        android:name="com.its.spiders.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.its.spiders.permission.MAPS_RECEIVE" />
+
+</manifest>
